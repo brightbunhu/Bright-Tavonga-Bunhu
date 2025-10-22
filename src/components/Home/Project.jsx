@@ -1,9 +1,9 @@
 import React from "react";
-import image1 from "../../static/profile.jpg";
-import image2 from "../../static/profile.jpg";
-import image3 from "../../static/profile.jpg";
-import cert1 from "../../static/profile.jpg";
-import cert2 from "../../static/profile.jpg";
+import image1 from "../../static/Clubspic.png";
+import image2 from "../../static/Catholic.png";
+import image3 from "../../static/BizNest.jpg";
+import cert1 from "../../static/IBM.jpg";
+import cert2 from "../../static/AibDC.png";
 import cert3 from "../../static/profile.jpg";
 
 const ProjectsAndCertificates = () => {
@@ -24,7 +24,7 @@ const ProjectsAndCertificates = () => {
         "A website for updates by the Cathsoc Executive and payment of Subscriptions tool",
       image: image2,
       technologies: ["HTML", "CSS", "JS"],
-      link: "cathsoc.vercel.app",
+      link: "https://brightbunhu.github.io/CathsocMSU.github.io/",
     },
     {
       id: 3,
@@ -33,28 +33,25 @@ const ProjectsAndCertificates = () => {
         "A Language translation App that translates languages during Calls and chats",
       image: image3,
       technologies: ["Django", "CSS", "JS", "TensorFLow"],
-      link: "link",
+      link: "https://github.com/brightbunhu/level2.2-project.git",
     },
   ];
-
   const certificates = [
     {
       id: 1,
-      title: "Certificate A",
-      description: "Description of Certificate A.",
+      title: "IBM",
+      description:
+        "The data analytics concepts, methodologies and applications of data science certificate",
       image: cert1,
+      link: "https://www.credly.com/badges/7acde6b2-fc38-44e6-9bb2-a884ade2a17f/public_url",
     },
     {
       id: 2,
-      title: "Certificate B",
-      description: "Description of Certificate B.",
+      title: "IBM",
+      description:
+        "The data analytics concepts, methodologies and applications of data science certificate",
       image: cert2,
-    },
-    {
-      id: 3,
-      title: "Certificate C",
-      description: "Description of Certificate C.",
-      image: cert3,
+      link: "https://www.datacamp.com/skill-verification/AIF0024960948320",
     },
   ];
 
@@ -122,6 +119,18 @@ const ProjectsAndCertificates = () => {
               <div className="meta">
                 <h3 className="text-xl font-bold mb-2">{certificate.title}</h3>
                 <p className="text-gray-400">{certificate.description}</p>
+                <a
+                  href={
+                    certificate.link.startsWith("http")
+                      ? certificate.link
+                      : `https://${certificate.link}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-600 underline cursor-pointer"
+                >
+                  View Certificate →
+                </a>
               </div>
             </article>
           ))}

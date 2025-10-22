@@ -1,52 +1,74 @@
 import { motion } from "framer-motion";
-import { FaPython, FaJs, FaDatabase } from "react-icons/fa";
-import { SiPandas } from "react-icons/si";
+import {
+  FaPython,
+  FaJs,
+  FaDatabase,
+  FaReact,
+  FaNodeJs,
+  FaTable,
+} from "react-icons/fa";
+import {
+  SiPandas,
+  SiScikitlearn,
+  SiNumpy,
+  SiDjango,
+  SiExpress,
+} from "react-icons/si";
+
+import course1 from "../../static/intropy.jpg";
+import course2 from "../../static/Stats.jpg";
+import course3 from "../../static/DW.jpg";
+import course4 from "../../static/EDA.jpg";
+import cert1 from "../../static/IBM.jpg";
+import cert2 from "../../static/AibDC.png";
 
 const courses = [
   {
     id: 1,
-    title: "Data Structures and Algorithms",
-    description: "A course on data structures and algorithms",
-    image: "/images/data-structures.jpg",
-    link: "https://www.coursera.org/learn/data-structures",
+    title: "Introduction To Python",
+    description: "Python Course",
+    image: course1,
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/a3af5d90c553b79900b724c3988da2fc78c4a3ef",
   },
   {
     id: 2,
-    title: "Machine Learning",
-    description: "A course on machine learning",
-    image: "/images/machine-learning.jpg",
-    link: "https://www.coursera.org/learn/machine-learning",
+    title: "Statistcis",
+    description: "Introduction to Statistcs",
+    image: course2,
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/6f49731e17419443356ecd485a91b89d3dd5f5dc",
   },
   {
     id: 3,
-    title: "Deep Learning",
-    description: "A course on deep learning",
-    image: "/images/deep-learning.jpg",
-    link: "https://www.coursera.org/learn/deep-learning",
+    title: "Data warehouse",
+    description: "Data Warehousing",
+    image: course3,
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/f4f6b9336110c2793f4a53539b1aaf10b51a9497",
+  },
+  {
+    id: 4,
+    title: "Explaratory Data Anaylsis",
+    description: "EDA",
+    image: course4,
+    link: "https://www.datacamp.com/completed/statement-of-accomplishment/course/cb41f52d3b6ee517410418502dd5503b58005303",
   },
 ];
 
 const certificates = [
   {
     id: 1,
-    title: "Certified Data Scientist (CDS)",
-    description: "A certificate in data science",
-    image: "/images/cds.jpg",
-    link: "https://www.datasciencecertification.org/",
+    title: "IBM",
+    description:
+      "The data analytics concepts, methodologies and applications of data science certificate",
+    image: cert1,
+    link: "https://www.credly.com/badges/7acde6b2-fc38-44e6-9bb2-a884ade2a17f/public_url",
   },
   {
     id: 2,
-    title: "Certified Machine Learning Engineer (CMLE)",
-    description: "A certificate in machine learning",
-    image: "/images/cmle.jpg",
-    link: "https://www.machinelearningcertification.org/",
-  },
-  {
-    id: 3,
-    title: "AWS Certified Developer - Associate",
-    description: "A certificate in AWS development",
-    image: "/images/aws.jpg",
-    link: "https://aws.amazon.com/certification/",
+    title: "IBM",
+    description:
+      "The data analytics concepts, methodologies and applications of data science certificate",
+    image: cert2,
+    link: "https://www.datacamp.com/skill-verification/AIF0024960948320",
   },
 ];
 
@@ -104,9 +126,15 @@ const About = () => {
                 <li className="flex items-center gap-1">
                   <SiPandas size={16} /> Pandas
                 </li>
-                <li>Scikit-learn</li>
-                <li>NumPy</li>
-                <li>Django</li>
+                <li className="flex items-center gap-1">
+                  <SiScikitlearn size={16} /> Scikit-learn
+                </li>
+                <li className="flex items-center gap-1">
+                  <SiNumpy size={16} /> NumPy
+                </li>
+                <li className="flex items-center gap-1">
+                  <SiDjango size={16} /> Django
+                </li>
               </ul>
             </div>
 
@@ -117,9 +145,15 @@ const About = () => {
                 <span className="font-semibold">JavaScript</span>
               </div>
               <ul className="ml-6 text-sm text-gray-300">
-                <li>React.js</li>
-                <li>Express</li>
-                <li>Node.js</li>
+                <li className="flex items-center gap-1">
+                  <FaReact size={16} /> React.js
+                </li>
+                <li className="flex items-center gap-1">
+                  <SiExpress size={16} /> Express
+                </li>
+                <li className="flex items-center gap-1">
+                  <FaNodeJs size={16} /> Node.js
+                </li>
               </ul>
             </div>
 
@@ -128,10 +162,14 @@ const About = () => {
               <FaDatabase size={24} className="text-blue-300" />
               <span>SQL Server</span>
             </div>
+
             <div className="flex items-center gap-2">
+              {/* No icon available for Power BI */}
               <span>Power BI</span>
             </div>
+
             <div className="flex items-center gap-2">
+              <FaTable size={24} className="text-green-300" />
               <span>Excel</span>
             </div>
           </div>
