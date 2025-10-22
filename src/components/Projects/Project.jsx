@@ -69,11 +69,16 @@ const Projects = () => {
               ))}
             </div>
             <a
-              href={project.link}
+              href={
+                project.link.startsWith("http")
+                  ? project.link
+                  : `https://${project.link}`
+              }
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700"
+              className="text-blue-400 hover:text-blue-600 underline cursor-pointer"
             >
-              View Project
+              View Project →
             </a>
           </motion.div>
         ))}
