@@ -20,7 +20,7 @@ import course2 from "../../static/Stats.jpg";
 import course3 from "../../static/DW.jpg";
 import course4 from "../../static/EDA.jpg";
 import cert1 from "../../static/IBM.jpg";
-import cert2 from "../../static/AibDC.png";
+import cert2 from "../../static/AIbDC.png";
 
 const courses = [
   {

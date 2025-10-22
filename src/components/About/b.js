@@ -25,3 +25,22 @@ import {
   SiExpress,
   SiPowerbi,
 } from "react-icons/si";
+
+import { motion } from "framer-motion";
+import {
+  FaPython,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaMicrosoft,
+  FaTable,
+} from "react-icons/fa";
+import {
+  SiPandas,
+  SiScikitlearn,
+  SiNumpy,
+  SiDjango,
+  SiExpress,
+  SiPowerbi,
+} from "react-icons/si";
