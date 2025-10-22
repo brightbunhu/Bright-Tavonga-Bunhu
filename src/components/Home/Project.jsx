@@ -3,8 +3,7 @@ import image1 from "../../static/Clubspic.png";
 import image2 from "../../static/Catholic.png";
 import image3 from "../../static/BizNest.jpg";
 import cert1 from "../../static/IBM.jpg";
-import cert2 from "../../static/AibDC.png";
-import cert3 from "../../static/profile.jpg";
+import cert2 from "../../static/AIbDC.png";
 
 const ProjectsAndCertificates = () => {
   const projects = [
