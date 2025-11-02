@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <motion.footer
-      className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-4 border-t-4 border-red-500"
+      className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-4 border-t-4 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
