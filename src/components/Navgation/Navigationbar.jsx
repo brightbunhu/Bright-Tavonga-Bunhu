@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-400 to-blue-600 shadow-lg p-4 border-4 border-red-500">
+    <nav className="bg-gradient-to-r from-blue-400 to-blue-600 shadow-lg p-4 border-4 ">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo & Name */}
         <div className="flex items-center gap-3">
