@@ -77,8 +77,7 @@ const AboutMe = () => {
           About Me
         </h1>
         <p className="text-sm sm:text-lg mb-8">
-          I'm a passionate Data Scientist and Web Developer with expertise in
-          Machine Learning and Full Stack Development.
+          Data Scientist & Web Developer | Passionate about Building AI-Powered Solutions for Zimbabwean Problems 🌍💻
         </p>
         <div className="flex flex-wrap justify-center">
           {words.map((word, index) => (
