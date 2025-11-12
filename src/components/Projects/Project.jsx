@@ -1,40 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import image1 from "../../static/Clubspic.png";
-import image2 from "../../static/Catholic.png";
-import image3 from "../../static/BizNest.jpg";
-
-const projects = [
-  {
-    id: 1,
-    title: "MSU CLUBS AND SOCITIES",
-    description:
-      "A React Clubs Projects Midlands State Univeristy Clubs and socities",
-    image: image1,
-    technologies: ["React", "Node.js", "MongoDB"],
-    link: "reactclubs.vercel.app",
-  },
-  {
-    id: 2,
-    title: "MSU CATHSOC WEBSITE ",
-    description:
-      "A website for updates by the Cathsoc Executive and payment of Subscriptions tool",
-    image: image2,
-    technologies: ["HTML", "CSS", "JS"],
-    link: "https://brightbunhu.github.io/CathsocMSU.github.io/",
-  },
-  {
-    id: 3,
-    title: "BIZNEST APP",
-    description:
-      "A Language translation App that translates languages during Calls and chats",
-    image: image3,
-    technologies: ["Django", "CSS", "JS", "TensorFLow"],
-    link: "https://github.com/brightbunhu/level2.2-project.git",
-  },
-];
+import { projects } from "../../data/projects";
+import { truncateWords } from "../../utils/helpers";
+import TechnologyIcon from "./TechnologyIcon";
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gray-900 text-white p-4 sm:p-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">
@@ -44,42 +17,67 @@ const Projects = () => {
         {projects.map((project) => (
           <motion.div
             key={project.id}
-            className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg"
+            className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: project.id * 0.1 }}
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-32 sm:h-48 object-cover rounded-lg mb-4"
-            />
-            <h2 className="text-lg sm:text-xl font-bold mb-2">
-              {project.title}
-            </h2>
-            <p className="text-sm sm:text-base mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-blue-500 text-white px-2 py-1 rounded-md text-xs sm:text-sm"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-            <a
-              href={
-                project.link.startsWith("http")
-                  ? project.link
-                  : `https://${project.link}`
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-600 underline cursor-pointer"
+            <div
+              onClick={() => navigate(`/project/${project.id}`)}
+              className="cursor-pointer"
             >
-              View Project →
-            </a>
+              <div className="w-full h-40 sm:h-56 mb-4 rounded-lg overflow-hidden bg-gray-700 flex items-center justify-center">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    if (e.target.nextSibling) {
+                      e.target.nextSibling.style.display = 'block';
+                    }
+                  }}
+                />
+                <div className="hidden text-gray-500 text-sm p-4">Image not available</div>
+              </div>
+              <h2 className="text-lg sm:text-xl font-bold mb-2">
+                {project.title}
+              </h2>
+              <p className="text-sm sm:text-base mb-4">{truncateWords(project.description, 10)}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.technologies.map((tech) => (
+                  <TechnologyIcon key={tech} tech={tech} />
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              {project.link && (
+                <a
+                  href={
+                    project.link.startsWith("http")
+                      ? project.link
+                      : `https://${project.link}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition duration-300 text-center"
+                >
+                  View Project →
+                </a>
+              )}
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="w-full bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-semibold transition duration-300 text-center"
+                >
+                  GitHub Repo →
+                </a>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

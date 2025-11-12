@@ -11,11 +11,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo & Name */}
         <div className="flex items-center gap-3">
-          <img
-            src={profileImg}
-            alt="Profile"
-            className="w-10 h-10 rounded-full border-2 border-white object-cover"
-          />
+          <div className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-gray-800 flex items-center justify-center">
+            <img
+              src={profileImg}
+              alt="Profile"
+              className="w-full h-full object-contain"
+            />
+          </div>
           <h1 className="text-white font-bold text-lg">Bright Tavonga Bunhu</h1>
         </div>
 

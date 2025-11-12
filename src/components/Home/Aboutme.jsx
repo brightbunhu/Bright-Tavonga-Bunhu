@@ -64,11 +64,11 @@ const AboutMe = () => {
   return (
     <div className="bg-gray-900 text-white p-4 sm:p-8 flex flex-col md:flex-row items-center justify-center">
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
-        <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500">
+        <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 bg-gray-800 flex items-center justify-center">
           <img
             src={homeimage}
             alt="Profile Image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
