@@ -40,7 +40,6 @@ export const projects = [
     description: "An interactive Power BI dashboard for Instacart sales analytics and data visualization. Provides comprehensive insights into sales performance, customer behavior, product trends, and revenue metrics. Features dynamic filtering and drill-down capabilities for detailed analysis.",
     image: image4,
     technologies: ["Power BI"],
-    link: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard/blob/main/instacart_dashboard.pdft",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard"
   },
   {
