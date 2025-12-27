@@ -111,6 +111,4 @@ This project shows my ability to turn real business problems into practical data
     link: "https://instacart-dashboardd.streamlit.app",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
   },*/
-
-  ,
 ];
