@@ -58,37 +58,57 @@ export const projects = [
   {
     id: 6,
     title: "Loan Default Power BI Dashboard",
-    description: `
-🧠 Why I built this dashboard
-
-Microfinance institutions deal with thousands of loan records, yet many decisions are still made using spreadsheets or intuition. I built this dashboard to show how data visualization and analytics can bridge the gap between raw data and real business action.
-
-The goal was not just to “show charts,” but to:
-• Reveal hidden patterns behind loan defaults  
-• Translate complex datasets into clear, executive-level insights  
-• Create a tool that supports risk management, monitoring, and strategy  
-
-🏢 Why this is important for companies
-
-This dashboard provides:
-• A single source of truth for loan performance  
-• Faster identification of non-performing loan risks  
-• Evidence-based segmentation by job role, age, gender, and location  
-• Improved transparency, accountability, and reporting  
-
-In emerging economies like Zimbabwe, where financial stability is fragile, data-driven lending can protect both institutions and borrowers.
-
-📈 What the data owner should do next
-
-To unlock full value, the company should:
-• Connect the dashboard to live databases instead of static files  
-• Use insights to redesign loan products and approval criteria  
-• Combine historical data with predictive analytics  
-• Implement automated monitoring and alerts for risky loans
-  `,
+    description: `Project Summary
+This project is a Loan Default Analytics Dashboard built in Power BI using real microfinance loan data from BizNest Microfinance (Zimbabwe).
+The dashboard transforms raw loan records into clear, actionable insights that support risk management and data-driven lending decisions.
+________________________________________
+Why I Built It
+Many microfinance institutions rely on spreadsheets, which limits visibility into loan performance and borrower risk.
+I built this dashboard to demonstrate how analytics and visualization can improve monitoring, reduce defaults, and support smarter loan approvals.
+________________________________________
+Problems Solved
+✔ Limited visibility of loan performance
+✔ Poor identification of high-risk customers
+✔ Slow, manual reporting
+✔ Weak customer-level loan monitoring
+________________________________________
+Dashboard Pages & Value
+•	Executive Overview: Portfolio health, active vs defaulted loans, outstanding balances, and risk by age, gender, job role, and location.
+•	Client Analysis: Individual borrower profiles with loan status, interest rates, repayment periods, and risk indicators.
+•	Job Role Analysis: Risk patterns by profession to support better approval and pricing strategies.
+________________________________________
+Business Value
+•	Faster risk identification
+•	Better lending decisions
+•	Improved transparency and reporting
+•	Stronger portfolio control in volatile financial environments
+________________________________________
+Tools Used
+Power BI, Python,Power Query, CSV datasets
+________________________________________
+Next Steps
+•	Add predictive default modeling
+•	Build a Python (Streamlit) dashboard
+•	Develop a full MERN-stack loan management system with real-time analytics
+________________________________________
+Why This Matters
+This project shows my ability to turn real business problems into practical data solutions, not just charts.
+`,
     image: image6,
     technologies: ["Power BI"],
+    link: "https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard",
+    github: "https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard",
+  },
+  {
+    /*{
+    id: 7,
+    title: "Expol Electronic Security ",
+    description:
+      "A web-based interactive dashboard for Instacart sales data analysis built with Streamlit. Features real-time data visualization, exploratory data analysis (EDA), interactive charts with Plotly, and comprehensive sales metrics. Enables users to explore sales patterns, customer segments, and product performance through an intuitive interface.",
+    image: image5,
+    technologies: ["Python", "Streamlit", "Pandas", "Numpy", "Plotly"],
     link: "https://instacart-dashboardd.streamlit.app",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
+  },*/
   },
 ];

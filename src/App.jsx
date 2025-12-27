@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/FOoter";
 import Contact from "./components/Contact/Contact";
 import Cv from "./components/CV/Cv";
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cv" element={<Cv />} />
       </Routes>
       <Footer />
+      <Analytics />
     </>
   );
 }
