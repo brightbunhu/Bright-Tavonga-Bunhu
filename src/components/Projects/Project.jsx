@@ -32,18 +32,22 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-contain"
                   onError={(e) => {
-                    e.target.style.display = 'none';
+                    e.target.style.display = "none";
                     if (e.target.nextSibling) {
-                      e.target.nextSibling.style.display = 'block';
+                      e.target.nextSibling.style.display = "block";
                     }
                   }}
                 />
-                <div className="hidden text-gray-500 text-sm p-4">Image not available</div>
+                <div className="hidden text-gray-500 text-sm p-4">
+                  Image not available
+                </div>
               </div>
               <h2 className="text-lg sm:text-xl font-bold mb-2">
                 {project.title}
               </h2>
-              <p className="text-sm sm:text-base mb-4">{truncateWords(project.description, 10)}</p>
+              <p className="text-sm sm:text-base mb-4">
+                {truncateWords(project.description, 10)}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech) => (
                   <TechnologyIcon key={tech} tech={tech} />

@@ -55,6 +55,7 @@ export const projects = [
     link: "https://instacart-dashboardd.streamlit.app",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
   },
+
   {
     id: 6,
     title: "Loan Default Power BI Dashboard",
@@ -99,8 +100,8 @@ This project shows my ability to turn real business problems into practical data
     link: "https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard",
     github: "https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard",
   },
-  {
-    /*{
+
+  /*{
     id: 7,
     title: "Expol Electronic Security ",
     description:
@@ -110,5 +111,6 @@ This project shows my ability to turn real business problems into practical data
     link: "https://instacart-dashboardd.streamlit.app",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
   },*/
-  },
+
+  ,
 ];
