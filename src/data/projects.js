@@ -113,7 +113,7 @@ The dashboard allows shop owners to monitor cash flow, product performance, and 
 Additional insights and findings are documented in the Power BI project description on my portfolio website.
 `.trim(),
     image: image5,
-    technologies: ["Python", "Streamlit", "Pandas", "NumPy", "Plotly"],
+    technologies: ["Python", "Streamlit", "Pandas", "Numpy", "Plotly"],
     link: "https://instacart-dashboardd.streamlit.app",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
   },
@@ -188,7 +188,7 @@ React, HTML, CSS, JavaScript, GitHub Pages, Zoho Mail, Figma, Google Analytics
 This project showcases my ability to create professional, client-focused websites that combine **design, functionality, and business value**.
 `.trim(),
     image: image7,
-    technologies: ["React", "HTML", "CSS", "JavaScript"],
+    technologies: ["React", "HTML", "CSS", "JS"],
     link: "https://expolelectronicsecurity.co.zw",
     github: "",
   },
