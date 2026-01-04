@@ -7,7 +7,8 @@ import TechnologyIcon from "./TechnologyIcon";
 const ProjectDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const project = projects.find((p) => p.id === parseInt(id));
+
+  const project = projects.find((p) => p.id === parseInt(id, 10));
 
   if (!project) {
     return (
@@ -36,6 +37,7 @@ const ProjectDetail = () => {
   return (
     <div className="bg-gray-900 text-white min-h-screen p-4 sm:p-8">
       <div className="max-w-4xl mx-auto">
+        {/* Back Button */}
         <button
           onClick={() => navigate(-1)}
           className="mb-6 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-semibold transition duration-300 flex items-center gap-2"
@@ -43,29 +45,50 @@ const ProjectDetail = () => {
           ← Back
         </button>
 
+        {/* Project Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="bg-gray-800 rounded-lg shadow-lg overflow-hidden"
         >
+          {/* Project Image */}
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-64 sm:h-96 object-cover"
           />
+
+          {/* Content */}
           <div className="p-6 sm:p-8">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            {/* Title */}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
               {project.title}
             </h1>
-            <p className="text-gray-300 text-base sm:text-lg mb-6 leading-relaxed">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-3 mb-6">
+
+            {/* Description with Proper Spacing */}
+            <div className="text-gray-300 text-base sm:text-lg leading-relaxed space-y-4 mb-8">
+              {project.description
+                .split(/\n+/) // REGEX for multiple line breaks
+                .filter(Boolean)
+                .map((line, index) => (
+                  <p key={index}>{line.trim()}</p>
+                ))}
+            </div>
+
+            {/* Technologies */}
+            <div className="flex flex-wrap gap-3 mb-8">
               {project.technologies.map((tech) => (
-                <TechnologyIcon key={tech} tech={tech} className="text-3xl" size="lg" />
+                <TechnologyIcon
+                  key={tech}
+                  tech={tech}
+                  size="lg"
+                  className="text-3xl"
+                />
               ))}
             </div>
+
+            {/* Links */}
             <div className="flex flex-wrap gap-4">
               {projectLink && (
                 <a
@@ -77,6 +100,7 @@ const ProjectDetail = () => {
                   View Project →
                 </a>
               )}
+
               {githubLink && (
                 <a
                   href={githubLink}
@@ -96,4 +120,3 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
-
