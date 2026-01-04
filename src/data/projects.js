@@ -4,6 +4,7 @@ import image3 from "../static/BizNest.jpg";
 import image4 from "../static/main.png";
 import image5 from "../static/stream.png";
 import image6 from "../static/bird1.png";
+import image7 from "../static/Expol.png"; // Replace with your actual website screenshot
 
 export const projects = [
   {
@@ -158,15 +159,37 @@ This project highlights my ability to translate real-world business problems int
     technologies: ["Power BI"],
     github: "https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard",
   },
-];
 
-/*{
+  {
     id: 7,
-    title: "Expol Electronic Security ",
-    description:
-      "A web-based interactive dashboard for Instacart sales data analysis built with Streamlit. Features real-time data visualization, exploratory data analysis (EDA), interactive charts with Plotly, and comprehensive sales metrics. Enables users to explore sales patterns, customer segments, and product performance through an intuitive interface.",
-    image: image5,
-    technologies: ["React", "Node.js", "JS"],
-    link: "expolelectronicsecurity.co.zw",
-   
-  },*/
+    title: "Expol Electronic Security Website",
+    description: `
+Expolelectronicsecurity.co.zw is a modern, responsive website developed for Expo Electronic Security, a professional provider of CCTV installations, car alarm systems, and electronic security solutions.
+
+Key Features:
+• Home & About sections highlighting company values, mission, and expertise
+• Services showcase detailing CCTV installations, car alarms, and custom security solutions
+• Portfolio/Gallery presenting past projects to build credibility and trust
+• Integrated contact forms with phone, email, and WhatsApp Business for direct inquiries
+• Subscription option for updates, promotions, and news
+• Mobile-first responsive design for optimal experience on all devices
+• SEO-friendly structure and fast-loading pages for better online visibility
+• Secure and reliable deployment with professional email integration
+
+Business Impact:
+• Strengthens brand authority and professionalism online
+• Enhances lead generation through direct client contact options
+• Demonstrates previous work to increase trust and conversion
+• Improves client communication and operational efficiency
+
+Technologies & Tools:
+React, HTML, CSS, JavaScript, GitHub Pages, Zoho Mail, Figma, Google Analytics
+
+This project showcases my ability to create professional, client-focused websites that combine **design, functionality, and business value**.
+`.trim(),
+    image: image7,
+    technologies: ["React", "HTML", "CSS", "JavaScript"],
+    link: "https://expolelectronicsecurity.co.zw",
+    github: "",
+  },
+];
