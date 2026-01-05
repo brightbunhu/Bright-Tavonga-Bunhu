@@ -74,24 +74,27 @@ Impact:
 
   {
     id: 4,
-    title: "Instacart Sales Analytics Dashboard (Power BI)",
+    title: "Instacart Sales & Customer Behavior Analysis (Power BI)",
     description: `
-An interactive Power BI dashboard designed to analyze Instacart sales data.
+This Power BI project analyzes Instacart’s grocery order data to uncover customer purchasing behavior, peak demand periods, and top-performing products and departments.
 
-Key Insights Provided:
-• Sales performance and revenue trends
-• Customer purchasing behavior
-• Product demand and category performance
-• Time-based ordering patterns
+Situation:
+Instacart processes millions of orders, but raw transactional data does not clearly show when customers order, what they buy most, or how demand changes over time—making inventory planning, staffing, and marketing decisions more challenging.
 
-The dashboard includes dynamic filters and drill-down capabilities, enabling detailed exploration and data-driven decision-making.
-`.trim(),
+Task:
+The goal was to build an interactive Power BI dashboard that answers key business questions around customer ordering patterns, peak demand periods, product and department performance, and customer loyalty, while keeping insights easy to understand for non-technical stakeholders.
+
+Action:
+The data was cleaned and modeled by creating relationships between orders, customers, products, departments, and time. Key measures such as total orders, average orders per customer, reorder rate, and time-based order metrics were developed. Interactive visuals were designed to analyze orders by day and time, department and product performance, and repeat customer behavior, with filters for deeper exploration.
+
+Result:
+The analysis revealed that Sundays generate the highest order volumes, afternoons account for nearly half of all orders, and produce contributes over 40% of total demand, with organic products leading. Customers place an average of 16 orders, and a 65% reorder rate highlights strong customer loyalty. These insights support better inventory planning, workforce scheduling, and targeted marketing strategies.
+  `.trim(),
     image: image4,
     technologies: ["Power BI"],
     link: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard/blob/main/instacart_dashboard.pdf",
     github: "https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard",
   },
-
   {
     id: 5,
     title: "Instacart Analytics Dashboard (Streamlit)",
@@ -169,9 +172,7 @@ Expolelectronicsecurity.co.zw is a modern, responsive website developed for Expo
 Key Features:
 • Home & About sections highlighting company values, mission, and expertise
 • Services showcase detailing CCTV installations, car alarms, and custom security solutions
-• Portfolio/Gallery presenting past projects to build credibility and trust
 • Integrated contact forms with phone, email, and WhatsApp Business for direct inquiries
-• Subscription option for updates, promotions, and news
 • Mobile-first responsive design for optimal experience on all devices
 • SEO-friendly structure and fast-loading pages for better online visibility
 • Secure and reliable deployment with professional email integration
@@ -183,9 +184,9 @@ Business Impact:
 • Improves client communication and operational efficiency
 
 Technologies & Tools:
-React, HTML, CSS, JavaScript, GitHub Pages, Zoho Mail, Figma, Google Analytics
+React.js, GitHub Pages, Zoho Mail
 
-This project showcases my ability to create professional, client-focused websites that combine **design, functionality, and business value**.
+This project showcases my ability to create professional, client-focused websites that combine design, functionality, and business value.
 `.trim(),
     image: image7,
     technologies: ["React", "HTML", "CSS", "JS"],
