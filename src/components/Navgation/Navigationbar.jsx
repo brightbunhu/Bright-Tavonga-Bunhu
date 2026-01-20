@@ -40,7 +40,7 @@ const Navbar = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="text-xl font-bold font-heading bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="text-xl font-bold font-heading bg-gradient-to-r from-blue-400 via-primary to-purple-500 bg-clip-text text-transparent drop-shadow-sm">
             Bright Bunhu
           </span>
         </Link>

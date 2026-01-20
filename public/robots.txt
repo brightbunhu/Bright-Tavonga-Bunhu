@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://brightbunhu.dev/sitemap.xml
+Sitemap: https://bright-tavonga-bunhu.vercel.app/sitemap.xml

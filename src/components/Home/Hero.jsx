@@ -10,7 +10,7 @@ const Hero = () => {
   const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center pt-24 overflow-hidden bg-dark-bg selection:bg-primary selection:text-white">
+    <section className="relative w-full min-h-screen flex items-center justify-center pt-32 lg:pt-40 overflow-hidden bg-dark-bg selection:bg-primary selection:text-white">
       {/* Dynamic Background Pattern */}
       <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-grid-pattern opacity-[0.03]" />
@@ -97,47 +97,47 @@ const Hero = () => {
           dragElastic={0.16}
           dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
           whileTap={{ cursor: "grabbing" }}
-          className="relative order-1 lg:order-2 flex justify-center perspective-1000 cursor-grab"
+          className="relative order-1 lg:order-2 flex justify-center perspective-1000 cursor-grab mt-12 lg:mt-0"
         >
-          <div className="relative w-[320px] h-[480px] md:w-[400px] md:h-[550px] lg:w-[450px] lg:h-[600px] group">
+          <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px] group">
             
             {/* Abstract Background Shapes */}
-             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-[2rem] blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 -z-10 transform translate-y-4 translate-x-4" />
+             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition-opacity duration-500 -z-10 transform scale-125" />
             
             {/* The Image Card */}
-            <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-white/10 bg-gray-900/50 backdrop-blur-md shadow-2xl">
-              <div className="absolute inset-0 z-10 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-60" />
+            <div className="relative w-full h-full rounded-full overflow-hidden border border-white/10 bg-gray-900/50 backdrop-blur-md shadow-2xl">
+              <div className="absolute inset-0 z-10 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-30" />
               <img
                 src={profileImg}
                 alt="Bright Bunhu"
-                className="w-full h-full object-cover object-center transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
               />
               
               {/* Floating Badges inside the card for uniqueness */}
-              <div className="absolute bottom-6 left-6 z-20">
-                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                    <p className="text-xs text-gray-300 uppercase tracking-wider mb-1">Current Focus</p>
-                    <p className="text-white font-bold text-lg">AI & Web 3.0</p>
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 text-center w-full px-4">
+                 <div className="bg-white/10 backdrop-blur-md border border-white/20 p-2 rounded-xl transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                    <p className="text-[10px] text-gray-300 uppercase tracking-wider mb-0">Focus</p>
+                    <p className="text-white font-bold text-xs">AI & Web 3.0</p>
                  </div>
               </div>
             </div>
 
             {/* Floating Elements outside */}
             <motion.div
-              animate={{ y: [-20, 20, -20] }}
+              animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-10 -right-10 z-30 bg-card-bg border border-gray-700 p-4 rounded-2xl shadow-xl hidden md:block"
+              className="absolute -top-4 -right-4 z-30 bg-card-bg border border-gray-700 p-2.5 rounded-2xl shadow-xl hidden md:block"
             >
-               <span className="text-4xl">🚀</span>
+               <span className="text-2xl">🚀</span>
             </motion.div>
 
              <motion.div
-              animate={{ y: [20, -20, 20] }}
+              animate={{ y: [10, -10, 10] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 -left-12 z-30 bg-card-bg border border-gray-700 p-4 rounded-2xl shadow-xl flex items-center gap-3 hidden md:flex"
+              className="absolute bottom-6 -left-8 z-30 bg-card-bg border border-gray-700 p-2.5 rounded-2xl shadow-xl flex items-center gap-2 hidden md:flex"
             >
-               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-               <span className="text-white font-bold font-mono text-sm">System.Online</span>
+               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+               <span className="text-white font-bold font-mono text-[10px]">System.Online</span>
             </motion.div>
 
           </div>
