@@ -1,16 +1,65 @@
-# React + Vite
+# Bright Tavonga Bunhu - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
 
-Currently, two official plugins are available:
+Welcome to the source code for my personal portfolio website. I am a passionate Data Scientist and Web Developer based in Zimbabwe, dedicated to building AI-powered solutions that solve real-world problems. My work bridges the gap between complex machine learning models and intuitive web interfaces, focusing on scalable applications that tackle local challenges while maintaining global standards of performance and design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository serves as the central hub for showcasing my skills, experience, and the diverse projects I have completed.
 
-## React Compiler
+**Live Portfolio:** [https://bright-tavonga-bunhu.vercel.app/](https://bright-tavonga-bunhu.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Skills
 
-## Expanding the ESLint configuration
+I possess a diverse set of technical skills ranging from web development to data science and machine learning.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **Languages:** Python, JavaScript, R, SQL
+*   **Web Frameworks:** React, Node.js, Tailwind CSS
+*   **Data Science & AI:** TensorFlow, Power BI
+*   **Tools:** Git, GitHub, VS Code
+
+## Projects
+
+Below is a selection of key projects featured in my portfolio, demonstrating my capabilities in full-stack development, data analysis, and AI integration.
+
+### MSU Clubs and Societies Platform
+A comprehensive web-based platform designed for Midlands State University clubs and societies. It facilitates club registration, event management, and member engagement.
+*   **Technologies:** React, Node.js, MongoDB
+*   **Live Link:** [https://reactclubs.vercel.app](https://reactclubs.vercel.app)
+*   **GitHub:** [https://github.com/brightbunhu/reactclubs](https://github.com/brightbunhu/reactclubs)
+
+### MSU Catholic Society (CATHSOC) Website
+An official website for the MSU Catholic Society, providing a centralized place for announcements, event listings, and community resources.
+*   **Technologies:** HTML, CSS, JavaScript
+*   **Live Link:** [https://brightbunhu.github.io/CathsocMSU.github.io/](https://brightbunhu.github.io/CathsocMSU.github.io/)
+*   **GitHub:** [https://github.com/brightbunhu/CathsocMSU.github.io](https://github.com/brightbunhu/CathsocMSU.github.io)
+
+### BizNest Translation Application
+An advanced language translation application enabling real-time multilingual communication during calls and chats, aimed at breaking language barriers in business.
+*   **Technologies:** Django, CSS, JavaScript, TensorFlow
+*   **GitHub:** [https://github.com/brightbunhu/level2.2-project.git](https://github.com/brightbunhu/level2.2-project.git)
+
+### Instacart Sales & Customer Behavior Analysis (Power BI)
+An interactive Power BI dashboard analyzing Instacart's grocery order data to uncover purchasing behaviors, peak demand periods, and product performance.
+*   **Technologies:** Power BI
+*   **View Dashboard:** [PDF Report](https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard/blob/main/instacart_dashboard.pdf)
+*   **GitHub:** [https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard](https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard)
+
+### Instacart Analytics Dashboard (Streamlit)
+A Python and Streamlit-based dashboard answering critical business questions about order trends, product frequency, and customer behavior.
+*   **Technologies:** Python, Streamlit, Pandas, Numpy, Plotly
+*   **Live Link:** [https://instacart-dashboardd.streamlit.app](https://instacart-dashboardd.streamlit.app)
+*   **GitHub:** [https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard](https://github.com/brightbunhu/Instacart-Sales-EDA-and-Dashboard)
+
+### Loan Default Analytics Dashboard (Power BI)
+A risk analysis dashboard for microfinance institutions, providing visibility into loan performance and default risks using real-world data.
+*   **Technologies:** Power BI
+*   **GitHub:** [https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard](https://github.com/brightbunhu/Loan-Default-Power-BI-Dashboard)
+
+### Expol Electronic Security Website
+A modern, responsive corporate website for a security solutions provider, featuring service showcases and direct client inquiry forms.
+*   **Technologies:** React, HTML, CSS, JS
+*   **Live Link:** [https://expolelectronicsecurity.co.zw](https://expolelectronicsecurity.co.zw)
+
+## Conclusion
+
+Thank you for visiting my portfolio repository. Feel free to explore the code, check out the live projects, and reach out if you are interested in collaborating on future ventures.
