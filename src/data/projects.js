@@ -5,6 +5,7 @@ import image4 from "../static/main.png";
 import image5 from "../static/stream.png";
 import image6 from "../static/bird1.png";
 import image7 from "../static/Expol.png"; // Replace with your actual website screenshot
+import image8 from "../static/Afridestiny.png";
 
 export const projects = [
   {
@@ -191,6 +192,24 @@ This project showcases my ability to create professional, client-focused website
     image: image7,
     technologies: ["React", "HTML", "CSS", "JS"],
     link: "https://expolelectronicsecurity.co.zw",
+    github: "",
+  },
+  {
+    id: 8,
+    title: "AfriDestiny Consultancy Platform",
+    description: `
+AfriDestiny is Zimbabwe’s premier consulting platform, architecting success for private enterprises and students alike. 
+
+Key Solutions:
+• Business Formalization: Seamless Pvt Ltd, PBC, and Trust registrations.
+• Education Consultancy: Complete application support for Study in India programs and scholarship fairs.
+• Corporate Compliance: Managing annual returns, statutory changes, and corporate maintenance.
+
+This high-impact platform bridges the gap between private enterprise and statutory compliance, providing scalable solutions for modern Zimbabwean initiatives.
+`.trim(),
+    image: image8,
+    technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
+    link: "https://www.afridestiny.co.zw",
     github: "",
   },
 ];
