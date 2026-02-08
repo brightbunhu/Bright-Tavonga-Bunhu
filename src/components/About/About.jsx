@@ -3,7 +3,7 @@ import {
   FaPython, FaJs, FaDatabase, FaReact, FaNodeJs, FaChartLine,
 } from "react-icons/fa";
 import {
-  SiPandas, SiScikitlearn, SiNumpy, SiDjango, SiExpress, SiPowerbi, SiTableau
+  SiTableau
 } from "react-icons/si";
 
 import course1 from "../../static/intropy.jpg";
@@ -140,7 +140,7 @@ const About = () => {
                          <div className="flex flex-wrap gap-4">
                             {[
                                 { name: "SQL Server", icon: <FaDatabase size={14} /> },
-                                { name: "Power BI", icon: <SiPowerbi size={14} /> },
+                                { name: "Power BI", icon: <FaChartLine size={14} /> },
                                 { name: "Tableau", icon: <SiTableau size={14} /> }
                             ].map(tool => (
                                <div key={tool.name} className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl border border-white/5">
