@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import profileImg from "./static/profile.jpg";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 // Set favicon dynamically
 const setFavicon = (imageUrl) => {
@@ -17,13 +18,14 @@ const setFavicon = (imageUrl) => {
   link.type = "image/jpeg";
 };
 
-// Set the profile image as favicon
 setFavicon(profileImg);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>
 );

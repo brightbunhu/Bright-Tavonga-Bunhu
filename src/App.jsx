@@ -13,11 +13,11 @@ import { Analytics } from "@vercel/analytics/react";
 
 const PageWrapper = ({ children }) => (
   <motion.div
-    initial={{ opacity: 0, y: 20 }}
+    initial={{ opacity: 0, y: 12 }}
     animate={{ opacity: 1, y: 0 }}
-    exit={{ opacity: 0, y: -20 }}
-    transition={{ duration: 0.5, ease: "easeOut" }}
-    className="page-transition"
+    exit={{ opacity: 0, y: -12 }}
+    transition={{ duration: 0.35, ease: "easeOut" }}
+    style={{ width: "100%", minHeight: "100vh" }}
   >
     {children}
   </motion.div>

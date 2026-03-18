@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
@@ -7,76 +6,93 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
+    { name: "Home",     path: "/" },
+    { name: "About",    path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact",  path: "/contact" },
+    { name: "CV",       path: "/cv" },
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, href: "https://github.com/brightbunhu" },
-    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/brightbunhu3266" },
-    { icon: <FaWhatsapp />, href: "https://wa.me/263737757995" },
-    { icon: <FaEnvelope />, href: "mailto:brightbunhu4@gmail.com" },
+    { icon: <FaGithub size={16} />,   href: "https://github.com/brightbunhu",                  label: "GitHub" },
+    { icon: <FaLinkedin size={16} />, href: "https://www.linkedin.com/in/brightbunhu3266",     label: "LinkedIn" },
+    { icon: <FaWhatsapp size={16} />, href: "https://wa.me/263737757995",                      label: "WhatsApp" },
+    { icon: <FaEnvelope size={16} />, href: "mailto:brightbunhu4@gmail.com",                   label: "Email" },
   ];
 
   return (
-    <footer className="bg-dark-bg pt-20 pb-10 relative overflow-hidden">
-      {/* Decorative Line */}
-      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
-      
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          
-          {/* Brand Info */}
-          <div className="md:col-span-2">
-             <Link to="/" className="text-2xl font-extrabold font-heading text-white tracking-tighter mb-6 block">
-               Bright <span className="text-primary">Tavonga.</span>
-             </Link>
-             <p className="text-gray-500 text-sm leading-relaxed max-w-sm font-light">
-               Architecting the intersection of data science and modern web experiences. Zimbabwean based developer focused on building intelligent ecosystems.
-             </p>
+    <footer className="t-bg border-t" style={{ borderColor: "var(--border)" }}>
+      <div className="max-w-6xl mx-auto px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <Link to="/" className="inline-block font-heading text-xl font-bold t-text mb-3">
+              Bright <span style={{ color: "var(--primary)" }}>Bunhu</span>
+            </Link>
+            <p className="text-sm leading-relaxed max-w-xs" style={{ color: "var(--text-muted)" }}>
+              ML Engineer &amp; Full-Stack Developer from Zimbabwe. Building smart, useful digital products.
+            </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Navigation */}
           <div>
-             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white mb-6">Navigation</h4>
-             <ul className="space-y-4">
-               {footerLinks.map(link => (
-                 <li key={link.name}>
-                   <Link to={link.path} className="text-gray-500 text-sm hover:text-primary transition-colors font-medium">{link.name}</Link>
-                 </li>
-               ))}
-             </ul>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-5 t-text">Navigation</p>
+            <ul className="space-y-3">
+              {footerLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    to={link.path}
+                    className="text-sm transition-colors"
+                    style={{ color: "var(--text-muted)" }}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Social Connect */}
+          {/* Connect */}
           <div>
-             <h4 className="text-[10px] font-black uppercase tracking-[0.2em] text-white mb-6">Connect</h4>
-             <div className="flex gap-4">
-               {socialLinks.map((link, idx) => (
-                 <a 
-                   key={idx} 
-                   href={link.href} 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="w-10 h-10 glass rounded-xl flex items-center justify-center text-gray-500 hover:text-white hover:border-white/20 transition-all"
-                 >
-                   {link.icon}
-                 </a>
-               ))}
-             </div>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-5 t-text">Connect</p>
+            <div className="flex gap-3 mb-5">
+              {socialLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="w-9 h-9 rounded-xl flex items-center justify-center border transition-all"
+                  style={{
+                    background: "var(--surface)",
+                    borderColor: "var(--border)",
+                    color: "var(--text-muted)",
+                  }}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+            <a
+              href="mailto:brightbunhu4@gmail.com"
+              className="text-sm transition-colors"
+              style={{ color: "var(--text-faint)" }}
+            >
+              brightbunhu4@gmail.com
+            </a>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 gap-6">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-gray-600">
-            &copy; {currentYear} Bright Tavonga Bunhu. All systems operational.
+        {/* Bottom bar */}
+        <div className="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4" style={{ borderColor: "var(--border)" }}>
+          <p className="text-xs" style={{ color: "var(--text-faint)" }}>
+            © {currentYear} Bright Tavonga Bunhu. All rights reserved.
           </p>
-          <div className="flex gap-8">
-             <span className="text-[10px] font-bold uppercase tracking-widest text-gray-700">Digital Portfolio v2.0</span>
-          </div>
+          <p className="text-xs" style={{ color: "var(--text-faint)" }}>
+            Built with React &amp; Framer Motion
+          </p>
         </div>
       </div>
     </footer>
