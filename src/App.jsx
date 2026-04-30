@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/FOoter";
 import Contact from "./components/Contact/Contact";
 import Cv from "./components/CV/Cv";
+import Chatbot from "./components/Chatbot/Chatbot";
 import { Analytics } from "@vercel/analytics/react";
 
 const PageWrapper = ({ children }) => (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/cv" element={<PageWrapper><Cv /></PageWrapper>} />
         </Routes>
       </AnimatePresence>
+      <Chatbot />
       <Analytics />
       <Footer />
     </>
