@@ -41,7 +41,7 @@ const sitemapPath = path.join(__dirname, "public", "sitemap.xml");
 
 // Create sitemap stream
 const sitemap = new SitemapStream({
-  hostname: "https://bright-tavonga-bunhu.vercel.app/",
+  hostname: "https://bunhu.biznest.co.zw/",
 });
 const writeStream = createWriteStream(sitemapPath);
 

@@ -41,7 +41,7 @@ const Hero = () => {
 
           <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold t-text leading-tight mb-6 tracking-tight">
             Hi, I'm <br />
-            <span className="text-gradient">Bright Bunhu</span>
+            <span className="text-gradient">Bright Tavonga Bunhu</span>
           </h1>
 
           <div className="text-xl mb-6 flex items-center gap-2 justify-center lg:justify-start" style={{ color: "var(--text-muted)" }}>
@@ -123,7 +123,7 @@ const Hero = () => {
             >
               <img
                 src={profileImg}
-                alt="Bright Bunhu — ML Engineer and Developer"
+                alt="Bright Tavonga Bunhu (Captain Nyuchi) — ML Engineer and Developer"
                 className="w-full h-full object-cover object-top"
               />
             </div>

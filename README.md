@@ -6,7 +6,7 @@ Welcome to the source code for my personal portfolio website. I am a passionate 
 
 This repository serves as the central hub for showcasing my skills, experience, and the diverse projects I have completed.
 
-**Live Portfolio:** [https://bright-tavonga-bunhu.vercel.app/](https://bright-tavonga-bunhu.vercel.app/)
+**Live Portfolio:** [https://bunhu.biznest.co.zw/](https://bunhu.biznest.co.zw/)
 
 ## Skills
 
