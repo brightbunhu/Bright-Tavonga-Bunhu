@@ -9,6 +9,8 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/FOoter";
 import Contact from "./components/Contact/Contact";
 import Cv from "./components/CV/Cv";
+import RatidzoCV from "./components/CV/RatidzoCV";
+import MukaroCV from "./components/CV/MukaroCV";
 import Chatbot from "./components/Chatbot/Chatbot";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -38,6 +40,8 @@ function App() {
           <Route path="/project/:id" element={<PageWrapper><ProjectDetail /></PageWrapper>} />
           <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
           <Route path="/cv" element={<PageWrapper><Cv /></PageWrapper>} />
+          <Route path="/ratidzo" element={<PageWrapper><RatidzoCV /></PageWrapper>} />
+          <Route path="/mukaro" element={<PageWrapper><MukaroCV /></PageWrapper>} />
         </Routes>
       </AnimatePresence>
       <Chatbot />
