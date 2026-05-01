@@ -22,6 +22,9 @@ Contact: brightbunhu4@gmail.com, WhatsApp: +263737757995.
 `;
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY; 
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const CHAT_STATES = {
   IDLE: "IDLE",
@@ -90,10 +93,10 @@ const Chatbot = () => {
         const email = emailMatch[0];
         try {
           await emailjs.send(
-            "service_jjilpvh",
-            "template_mx4duam",
+            EMAILJS_SERVICE_ID,
+            EMAILJS_TEMPLATE_ID,
             { user_email: email, message: `CV Requested via Chatbot by ${email}` },
-            "Y9Duuum9HslUIsGYQ"
+            EMAILJS_PUBLIC_KEY
           );
           setMessages(prev => [...prev, { id: Date.now() + 1, text: `Email received! You can download the CV below.`, isBot: true, isDownload: true }]);
         } catch (error) {
