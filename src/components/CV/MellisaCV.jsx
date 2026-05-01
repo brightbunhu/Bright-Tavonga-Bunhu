@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FiDownload, FiFileText } from "react-icons/fi";
 
-const MukaroCV = () => {
+const MellisaCV = () => {
   return (
     <div className="min-h-screen pt-28 pb-20 px-6 flex flex-col items-center justify-center t-bg">
       <motion.div
@@ -19,10 +19,10 @@ const MukaroCV = () => {
             Curriculum Vitae
           </span>
           <h1 className="font-heading text-4xl md:text-5xl font-bold t-text mt-3 mb-4 tracking-tight">
-            Mukaro CV
+            Mellisa Mukaro CV
           </h1>
           <p className="text-base leading-relaxed" style={{ color: "var(--text-muted)" }}>
-            Click the button below to download the CV for Mukaro.
+            Click the button below to download the CV for Mellisa Mukaro.
           </p>
         </div>
 
@@ -51,16 +51,13 @@ const MukaroCV = () => {
           </h2>
 
           <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("Mukaro CV file not found. Please upload the file to the public folder.");
-            }}
+            href="/Mellisa_Mukaro_CV.pdf"
+            download="Mellisa_Mukaro_CV.pdf"
             className="w-full flex items-center justify-center gap-2 py-4 text-white font-semibold rounded-xl transition-all hover:opacity-90 active:scale-[0.98]"
             style={{ background: "var(--primary)" }}
           >
             <FiDownload size={18} />
-            Download Mukaro CV
+            Download Mellisa CV
           </a>
         </motion.div>
       </motion.div>
@@ -68,4 +65,4 @@ const MukaroCV = () => {
   );
 };
 
-export default MukaroCV;
+export default MellisaCV;
